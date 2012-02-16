@@ -6,7 +6,7 @@ run your headless tests.
 - Qt 4.7: from http://dl.atrpms.net/el5-x86_64/atrpms/testing/
 - xfvb-run(.sh): from xorg-x11-server-1.5.3-5.fc10.src.rpm
 - xvfb init script
-- PhantomJS 1.2.0: from http://code.google.com/p/phantomjs/
+- PhantomJS: from http://code.google.com/p/phantomjs/
 
 # Licenses
 - Qt 4.7: LGPL
@@ -18,8 +18,13 @@ run your headless tests.
 - yum/rpm install qt47-devel qt47-webkit qt47-webkit-devel sqlite-devel
 
 # How to build
-- source code is included for PhantomJS 1.1 and 1.2
-- use fetch-phantomjs-branch script to fetch sources from 1.3 branch
-- ./rpm SPECS/phantomjs-<version>.spec
+- source code is included for PhantomJS 1.1, 1.2, 1.3, 1.4, and 1.4.1
+- for PhantomJS 1.4.0 and 1.4.1 use `fetch-phantomjs-branch $version`
+- `./rpm SPECS/phantomjs-$version.spec`
+
+# Build branches
+- use fetch-phantomjs-branch script to fetch sources from branches
+- modify .spec to suit your needs
 
 Have fun!
+Jens Braeuer
